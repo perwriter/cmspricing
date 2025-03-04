@@ -153,7 +153,7 @@ export default function AdminPage() {
                 name={`${tierType.toLowerCase()}Price`}
                 type="number"
                 step="0.01"
-                defaultValue={tier?.[`${tierType.toLowerCase()}Price`]}
+                defaultValue={(tier as any)?.[`${tierType.toLowerCase()}Price`]}
                 placeholder="Price"
                 className="block w-full rounded-lg bg-neutral-700 border border-neutral-600 focus:border-blue-500 focus:ring focus:ring-blue-500/50 text-white p-3"
                 required
@@ -162,7 +162,7 @@ export default function AdminPage() {
                 name={`${tierType.toLowerCase()}Original`}
                 type="number"
                 step="0.01"
-                defaultValue={tier?.[`${tierType.toLowerCase()}Original`] || ""}
+                defaultValue={(tier as any)?.[`${tierType.toLowerCase()}Original`] || ""}
                 placeholder="Original Price (optional)"
                 className="block w-full rounded-lg bg-neutral-700 border border-neutral-600 focus:border-blue-500 focus:ring focus:ring-blue-500/50 text-white p-3"
               />
