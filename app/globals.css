@@ -80,3 +80,29 @@
     @apply bg-background text-foreground;
   }
 }
+/* global.css or styles/globals.css */
+::-webkit-scrollbar {
+  width: 6px;
+
+
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: var(--scrollbar-thumb);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+}
